@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html-form</title>
+  <style>
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 10vh;
+    }
+    button {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+<form enctype="multipart/form-data" action="upload.php" method="post">
+  <div class="box">
+    <div class="container">
+  <span>Под каким именем сохранить файл на сервере: </span><input type="text" name="file_name" id="file_name">
+    </div>
+    <input type="file" name="file" id="file">
+    <button type="submit">Отправить форму</button>
+  </div>
+</form>
+</body>
+</html>
